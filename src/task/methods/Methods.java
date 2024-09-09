@@ -1,68 +1,78 @@
 package task.methods;
 
 public class Methods {
-    public static void main(String[] args) {
-        // Пример вызова метода
-        String string = getString("HELLO");
-        // Ожидаемый результат hello System.out.println(string);
-        // Вызовы ваших методов
 
-    }
+  public String stringToLowerCase(String str) {
+    return null;
+  }
 
-    // Метод принимающий строку и преобразующий ее в нижний регистр
-    public static String getString(String example) {
-        return example.toLowerCase();
-    }
+  public int sumOfTwoNumbers(int a, int b) {
+    return 0;
+  }
 
-// Реализуйте функциональность согласно описанию
+  public String sumOfTwoStrings(String a, String b) {
+    return null;
+  }
 
-// TODO: Создайте метод который вернет сумму двух чисел
+  public String sumOfStringAndNumber(String str, int num) {
+    return null;
+  }
 
+  public boolean compareStringNumberWithInt(String str, int num) {
+    return false;
+  }
 
-// TODO: Создайте метод который вернет сумму двух переданных строк
+  public boolean checkBooleans(boolean a, boolean b) {
+    return false;
+  }
 
+  public boolean isEven(int num) {
+    return false;
+  }
 
-// TODO: создайте метод который примет строку внутри которой передается число , а также принимает число . Метод должен суммировать числа
-//  обернуть их в строку и вернуть результат строкой
+  public String checkArrayEvenOdd(int[] arr) {
+    return null;
+  }
 
+  public int[] sumArrayElements(int[] arr) {
+    return null;
+  }
 
-// TODO: Создайте метод который принимает строку , число . Внутри строки передается число . Проверить , что если число внутри строки больше чем
-//  число которое передается как int , то пусть метод вернет false , а если меньше , то true
+  public int sumArray(int[] arr) {
+    return 0;
+  }
 
+  public int ageInMonths(int years) {
+    return 0;
+  }
 
-// TODO: Создайте метод который принимает 2 булевые переменные . Если обе true , верни true , если хоть одна из них true верни true ,
-//  если обе false верни false
+  public int ageInMinutes(int years) {
+    return 0;
+  }
 
+  public int ageInHours(int years) {
+    return 0;
+  }
 
-// TODO: Создайте метод который принимает число и вернет true если оно четное , и false если оно не четное
+  public boolean areNamesEqual(String name1, String name2) {
+    return false;
+  }
 
+  public int getLastElement(int[] arr) {
+    return 0;
+  }
 
-// TODO: Создайте метод который проверят числа в массиве , если все они четные верни "Массив четных чисел" , если есть и четные и не
-//  четные верни "Массив четных и не четных чисел" и если в массиве только нечетные числа верни "Массив не четных чисел"
+  public int countLetterA(String str) {
+    return 0;
+  }
 
+  private int wallet = 1000;
 
-// TODO: Создайте метод который принимает массив чисел и возвращает новый массив чисел . Внутри метода пройдитесь по элементам
-//  массива который подается в аргументы  и сложите все элементы в новый массив и верните его
+  public String withdraw(int amount) {
+    return null;
+  }
 
-
-// TODO: Создайте метод который принимает массив чисел и возвращает число . Внутри метода пройдитесь по элементам массива который подается в
-//  аргументы сложите все числа который переданы в массиве и верните сумму всех чисел
-
-
-// TODO: Создайте методы в которые можно будет передавать свой возраст , а возвращаться сколько полных месяцев в этом возрасте ,
-//  тоесть если человек прожил 10 лет , это 120 месяцевтак же сделайте перевод возраста в минуты и метод который расчетает возраст в часах
-
-
-// TODO: Создайте метод которому передаю имена , а он проверяет одинаковые ли они , причем не зависимо от регистра
-
-
-// TODO: Создайте метод которому можно передать массив элементов , а он вернет последний элемент
-
-
-// TODO: Создайте метод счетчик букв А . Подается строка и метод посчитает сколько букв А в строке
-
-
-// TODO: Создайте метод кошелек. Заведите переменную которая будет отвечать за сумму которая имеется в кошелке , к примеру 1000 . Далее метод , может вычитать сумму из кошелька
-//  если эта сумма не больше чем та которая в нем имеется , так же кошелек можно пополнить на любую сумму . Результат выполнения метода , должен вывести на экран состояние кошелька
-//  или сообщение о том , что сумму которую вы пытаетесь снять слишком велика.
+  public String deposit(int amount) {
+    return null;
+  }
 }
