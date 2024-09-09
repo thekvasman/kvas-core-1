@@ -2,7 +2,7 @@ package task.oop;
 
 public class OOP {
     public static void main(String[] args) {
-
+        System.out.println("HELLO WORLD");
     }
 
 // Реализуйте функциональность согласно описанию
