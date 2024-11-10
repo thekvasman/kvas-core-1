@@ -3,76 +3,126 @@ package task.methods;
 public class Methods {
 
   public String stringToLowerCase(String str) {
-    return null;
+    return str.toLowerCase();
   }
 
   public int sumOfTwoNumbers(int a, int b) {
-    return 0;
+    return a + b;
   }
 
   public String sumOfTwoStrings(String a, String b) {
-    return null;
+    return a + b;
   }
 
   public String sumOfStringAndNumber(String str, int num) {
-    return null;
+      int num2 = Integer.parseInt(str);
+    return String.valueOf(num + num2);
   }
 
   public boolean compareStringNumberWithInt(String str, int num) {
-    return false;
+    return Integer.parseInt(str) <= num;
   }
 
   public boolean checkBooleans(boolean a, boolean b) {
-    return false;
+    return a || b;
   }
 
   public boolean isEven(int num) {
-    return false;
+    return num % 2 == 0;
   }
 
   public String checkArrayEvenOdd(int[] arr) {
-    return null;
+    String x = "";
+    int sum = 0;
+    for (int j : arr) {
+      sum += j % 2;
+      if (sum == 0) {
+        x = "Массив чётных чисел";
+      } else if (sum == arr.length) {
+        x = "Массив нечётных чисел";
+      } else x = "Массив чётных и нечётных чисел";
+    }
+    return x;
   }
 
   public int[] sumArrayElements(int[] arr) {
-    return null;
+    int[] arr2 = new int[arr.length];
+    arr2[0] = arr[0];
+    int i = 1;
+    for(int j = 1; j < arr.length; j++){
+      arr2[i] = arr2[i - 1] + arr[j];
+      i++;
+    }
+    return arr2;
   }
 
   public int sumArray(int[] arr) {
-    return 0;
+    int sum = 0;
+    for (int j : arr){
+      sum += j;
+    }
+    return sum;
   }
 
   public int ageInMonths(int years) {
-    return 0;
+    return years * 12;
   }
 
   public int ageInMinutes(int years) {
-    return 0;
+    int i = 1;
+    int age = 0;
+    do {
+      if (i%4!=0) {
+        age += 525600;
+        i++;
+      }
+      else {
+        age += 527040;
+      }
+      years--;
+    } while (years!=0);
+    return age;
   }
 
   public int ageInHours(int years) {
-    return 0;
+    int i = 1;
+    int age = 0;
+    do {
+      if (i%4!=0) {
+        age += 8760;
+        i++;
+      }
+      else {
+        age += 8784;
+      }
+      years--;
+    } while (years!=0);
+    return age;
   }
 
   public boolean areNamesEqual(String name1, String name2) {
-    return false;
+    return name1.equalsIgnoreCase(name2);
   }
 
   public int getLastElement(int[] arr) {
-    return 0;
+    return arr[arr.length - 1];
   }
 
   public int countLetterA(String str) {
-    return 0;
+    return str.split("A", -1).length - 1;
   }
 
   private int wallet = 1000;
 
   public String withdraw(int amount) {
-    return null;
+    while (wallet>=0) {
+      wallet -= amount;
+    }
+    return "Остаток в кошельке: " + wallet;
   }
 
   public String deposit(int amount) {
-    return null;
+      wallet += amount;
+    return "Остаток в кошельке: " + wallet;
   }
 }

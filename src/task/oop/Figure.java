@@ -11,6 +11,6 @@ public abstract class Figure {
   public abstract double calculateArea();
 
   public String getName() {
-    return null;
+    return name;
   }
 }
