@@ -13,10 +13,10 @@ public abstract class Employee {
   public abstract void work();
 
   public String getName() {
-    return null;
+    return name;
   }
 
   public int getAge() {
-    return 0;
+    return age;
   }
 }
